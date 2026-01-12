@@ -1,0 +1,505 @@
+ * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+       
+
+        }
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+ /* Barra superior */
+ 
+        header {
+            width: 100%;
+            display: flex;
+            align-items: center;              
+            justify-content: space-between;   
+            background-color: #F5B700;
+            padding: 15px 40px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+    transform: translateY(0px);
+    opacity: 1;
+    transition: transform 0.8s ease, opacity 0.8s ease;
+    transition: background-color 0.8s ease;
+        }
+        .header-hide {
+      transform: translateY(px);
+    opacity: 1;
+    background-color: #F5B700;
+    transition: background-color 0.8s ease;
+    
+}
+.header2{
+    background-color: #F7F7F9;
+    transition: background-color 0.8s ease;
+
+}
+.btnsnavpart2{
+            list-style: none;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+}
+.btnsnavpart2 a{
+                text-decoration: none;
+            color: black;
+            font-weight: bold;
+            padding: 8px 14px;          
+            border-radius: 6px;  
+            transition: background-color 0.8s ease-in;
+}
+        .btnsnavpart2 a:hover {
+            background-color: rgba(0, 0, 0, 0.15); 
+            
+        }
+
+        .tamanho {
+            max-width: 4rem;
+  
+            transition: filter 1s ease;
+        }
+
+
+        .btnsnav {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .btnsnav a {
+            text-decoration: none;
+            color: #F7F7F9;
+            font-weight: bold;
+            padding: 8px 14px;          
+            border-radius: 6px;  
+            transition: background-color 0.3s ease-in;
+        }
+
+        .btnsnav a:hover {
+            background-color: rgba(0, 0, 0, 0.15); 
+            
+        }
+
+        footer {
+            background-color: #F5B700;
+            width: 100%;
+            padding: 25px;
+            padding-top: 50px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            position: static;
+            margin-top: 40px;
+
+           
+        }
+
+
+        .redes {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+        
+        }
+
+/* Corpo do site */
+/* cor #262626 */
+.fonte{
+      font-family: "Arimo", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: italic;
+  color: #F5B700;
+}
+        main{
+            margin: 5%;
+            text-align: justify;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+
+            
+        }
+        body{
+            background-color: #F7F7F9;
+    align-items: center;
+        }
+/* ultimo projeto */
+.ultimo-projeto {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.img-ultimo-projeto {
+    width: 40rem;
+    border-radius: 1rem;
+}
+
+.info-ultimo-projeto {
+    max-width: 40rem;
+}
+
+        /* teste */
+.seccards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 2rem;
+}
+.tituloma{
+    margin: 5%;
+}
+.semnada{
+    text-decoration: none;
+    color: white;
+}
+
+/* Card */
+.cardsprojetos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: #F5B700;
+    color: white;
+
+    width: clamp(18rem, 25vw, 22rem);
+    height: clamp(26rem, 40vw, 30rem);
+
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+
+    text-align: center;
+    overflow: hidden;
+
+    transition: 
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.cardsprojetos:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+/* Imagem */
+.ftscards {
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+    border-radius: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Texto */
+.txtcards {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+/* Título */
+.txtcards h3 {
+    font-size: 1.25rem;
+    margin: 0;
+}
+
+/* Descrição limitada */
+.txtcards p {
+    font-size: 1rem;
+    line-height: 1.4;
+
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+
+    overflow: hidden;
+}
+/* Barra inferior */
+        .pfooter {
+            margin-top: 20px;
+            text-align: center;
+            color: white;
+    
+        }
+.tamanho1{
+    max-width: 40px;
+}
+.j{
+    background-color: white;
+    border-radius: 5px;
+}
+
+/* sobre */
+.main {
+  padding: 40px;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  min-height: 34rem;
+
+}
+.sobre {
+  display: flex;
+  gap: 40px;
+  
+
+
+}
+
+.perfil {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.foto {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: #ddd;
+}
+
+.foto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.nome {
+  width: 120px;
+  height: 14px;
+
+}
+
+/* TEXTO */
+.sobre-texto {
+ display: flex;
+    max-width: 30rem;
+
+  padding: 20px;
+  align-items: center;
+
+}
+
+/* BADGES / CERTIFICADOS */
+.badges {
+  margin-top: 50px;
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.badge {
+  width: 120px;
+  height: 120px;
+  background: #e0e0e0;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.badge img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+/* dark mode */
+.darkmode{
+    background-color: #262626;
+}
+#light{
+    display: none;
+}
+/* "blog" */
+
+            .blog-header h1{
+            font-size: 2.5rem;
+            color: #F5B700;
+            margin-bottom: 10px;
+        }
+
+        .blog-header p{
+            color: #555;
+            font-size: 1rem;
+            margin-bottom: 40px;
+        }
+
+        .blog-section{
+            margin-bottom: 50px;
+        }
+        .centralizado{
+            text-align: center;
+
+            
+        }
+        .centralizado a{
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+        }
+        .blog-section h2{
+            color: #F5B700;
+            margin-bottom: 15px;
+        }
+
+        .blog-section p{
+            line-height: 1.7;
+            color: #262626;
+            text-align: justify;
+        }
+
+        /* imagens */
+        .blog-images{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .blog-images img{
+            width: 100%;
+            border-radius: 16px;
+            object-fit: cover;
+        }
+
+        /* destaque final */
+        .conclusao{
+            background-color: #F5B700;
+            color: white;
+            padding: 30px;
+            border-radius: 20px;
+        }
+
+@media (max-width: 1024px) {
+
+    header {
+        padding: 15px 20px;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .btnsnav,
+    .btnsnavpart2 {
+        gap: 12px;
+    }
+
+    .ultimo-projeto {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .img-ultimo-projeto {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .info-ultimo-projeto {
+        max-width: 100%;
+    }
+
+    .sobre {
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+    }
+
+    .sobre-texto {
+        max-width: 100%;
+        text-align: justify;
+    }
+
+    .badges {
+        justify-content: center;
+    }
+}
+
+
+/* Celulares */
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .btnsnav,
+    .btnsnavpart2 {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    main {
+        margin: 8%;
+    }
+
+    .cardsprojetos {
+        width: 100%;
+        max-width: 320px;
+        height: auto;
+    }
+
+    .ftscards {
+        aspect-ratio: 4 / 5;
+    }
+
+    .blog-header h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .blog-header p {
+        text-align: center;
+    }
+
+    footer {
+        padding: 30px 15px;
+    }
+}
+
+/* Celulares pequenos */
+@media (max-width: 480px) {
+
+    header {
+        padding: 12px;
+    }
+
+    .tamanho {
+        max-width: 3rem;
+    }
+
+    .foto {
+        width: 140px;
+        height: 140px;
+    }
+
+    .badge {
+        width: 90px;
+        height: 90px;
+    }
+
+    .blog-section h2 {
+        font-size: 1.3rem;
+    }
+
+    .conclusao {
+        padding: 20px;
+        text-align: center;
+    }
+}
